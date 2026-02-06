@@ -1,4 +1,4 @@
-package ReviewFXBasics;
+package IndividualHealthAssesment;
 
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
@@ -10,9 +10,9 @@ public class Main extends Application {
 
     @Override
     public void start(Stage primaryStage) throws Exception{
-        Parent root = FXMLLoader.load(getClass().getResource("ReviewFXBasics.fxml"));
-        primaryStage.setTitle("Hello World");
-        primaryStage.setScene(new Scene(root, 400, 300));
+        Parent root = FXMLLoader.load(getClass().getResource("IndividualHealthAssesment.fxml"));
+        primaryStage.setTitle("Individual Health Assessment");
+        primaryStage.setScene(new Scene(root, 600, 400));
         primaryStage.show();
     }
 
