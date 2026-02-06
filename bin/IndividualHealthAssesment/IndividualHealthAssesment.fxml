@@ -13,8 +13,10 @@
             <Font size="30.0" />
          </font>
       </Label>
-      <TextField fx:id="weightField" layoutX="81.0" layoutY="174.0" promptText="Enter weight in kgs" />
-      <TextField fx:id="heightField" layoutX="369.0" layoutY="174.0" promptText="Enter height in meters" />
-      <Button fx:id="calcBMIButton" layoutX="216.0" layoutY="279.0" mnemonicParsing="false" onAction="#calculateBMI" prefHeight="25.0" prefWidth="168.0" text="Calculate BMI" />
+      <TextField fx:id="weightField" layoutX="80.0" layoutY="148.0" promptText="Enter weight in kgs" />
+      <TextField fx:id="heightField" layoutX="368.0" layoutY="148.0" promptText="Enter height in meters" />
+      <Button fx:id="calcBMIButton" layoutX="216.0" layoutY="213.0" mnemonicParsing="false" onAction="#calculateBMI" prefHeight="25.0" prefWidth="168.0" text="Calculate BMI" />
+      <Label fx:id="BMICalcLabel" layoutX="192.0" layoutY="253.0" prefHeight="33.0" prefWidth="216.0" />
+      <Label fx:id="BMIMessageLabel" layoutX="192.0" layoutY="299.0" prefHeight="33.0" prefWidth="216.0" />
    </children>
 </AnchorPane>

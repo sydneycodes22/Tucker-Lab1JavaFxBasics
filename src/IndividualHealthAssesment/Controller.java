@@ -13,6 +13,12 @@ public class Controller {
     private TextField weightField;
     @FXML
     private TextField heightField;
+    @FXML
+    private Label BMICalcLabel;
+    @FXML
+    private Label BMIMessageLabel;
+
+    
 
     private BMICalculator bmiCalculator;
 
@@ -32,11 +38,9 @@ public class Controller {
             float bmi = bmiCalculator.calculateBMI();
             String bmiReport = bmiCalculator.getBMIReport(bmi);
 
-            Alert bmiAlert = new Alert(AlertType.INFORMATION);
-            bmiAlert.setTitle("BMI Result");
-            bmiAlert.setHeaderText("Your BMI Information");
-            bmiAlert.setContentText("BMI: " + String.format("%.2f", bmi) + "\nReport: " + bmiReport);
-            bmiAlert.showAndWait();
+            BMICalcLabel.setText(String.format("%.2f", bmi));
+            BMIMessageLabel.setText("The patient is " + bmiReport);
+           
             if (bmi < 18.5 || bmi >= 35.0) {
                 Alert warningAlert = new Alert(AlertType.WARNING);
                 warningAlert.setTitle("Health Advisory");

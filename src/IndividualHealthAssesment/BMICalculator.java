@@ -43,7 +43,7 @@ public class BMICalculator {
     }
 
     public float calculateBMI() {
-        // BMI calculation logic
+        // BMI calculation 
         return weight / (height * height);
     }  
 
